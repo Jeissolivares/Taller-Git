@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="icon/ico" href="./images/icon.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <title>Music Nest</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" style="margin-left: 5%;">Music Nest</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.youtube.com/" target="_blank">Youtube</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.arscesis.com/" target="_blank">Shop</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <form class="d-flex" role="search">
+                            <button class="btn btn-success" type="button" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Bienvenido!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Te has suscrito al blog, Disfruta!!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main style="margin-top: 10vh; margin-left: 5vh;">
+        <div class="initialDiv">
+            <div>
+                <div id="carousel" style="width: 100%;">
+                    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <iframe width="800vh" height="400vh" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                                </iframe>
+                            </div>
+                            <div class="carousel-item">
+                                <iframe width="800vh" height="400vh" src="https://www.youtube.com/embed/JN9xkgnZi4M"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="carousel-item">
+                                <iframe width="800vh" height="400vh" src="https://www.youtube.com/embed/bVV-zPXE4wA"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <h2><u>Un poco de contexto sobre la musica.</u></h2>
+                </div>
+                <div class="contextoMusica">
+                    <p>
+                        La música es una de las llamadas Bellas Artes, es decir, a un género artístico, que consiste en
+                        conseguir efectos estéticos a través de la manipulación de sonidos vocales o instrumentales,
+                        conforme a estándares culturales de ritmo, armonía y melodía. <br>
+                        La música es una de las mayores formas de expresión artística desde tiempos ancestrales. Además
+                        constituye el sostén de una gigantesca industria global, ya que en la cultura tienen cabida muy
+                        distintos tipos de música, empleados con fines recreativos, ceremoniales, publicitarios o de
+                        distinta naturaleza.
+                    </p>
+                </div>
+                <div>
+                    <p style="text-align: center ;">
+                        <b>
+                            <u>Top canciones más reproducidas en youtube</u>
+                        </b>
+                    </p>
+                    <table class="table table-dark table-sm">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Cancion</th>
+                            <th scope="col">Artista</th>
+                            <th scope="col">Nro. Reproducciones</th>
+                            <th scope="col">Url</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Baby Shark Dance</td>
+                            <td>Pinkfond</td>
+                            <td>11,401,579,719</td>
+                            <td><a href="https://www.youtube.com/watch?v=XqZsoesa55w" target="_blank">Ver</a></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Despacito</td>
+                            <td>Luis Fonsi</td>
+                            <td>7,976,409,147</td>
+                            <td><a href="https://www.youtube.com/watch?v=kJQP7kiw5Fk" target="_blank">Ver</a></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td >Johny Johny Yes Papa</td>
+                            <td>LooLoo Kids</td>
+                            <td>6,470,098,544</td>
+                            <td><a href="https://www.youtube.com/watch?v=F4tHL8reNCs&t=32s" target="_blank">Ver</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+
+            <aside>
+                <div id="cards">
+                    <div class="card text-bg-primary mb-3" style="width: 30vh;">
+                        <div class="card-header" style="text-align: center;">Rock</div>
+                        <div class="card-body">
+                            <iframe width="165"  src="https://www.youtube.com/embed/-tJYN-eG1zk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="card text-bg-secondary mb-3" style="width: 30vh;">
+                        <div class="card-header" style="text-align: center;">Pop</div>
+                        <div class="card-body">
+                            <iframe width="165" src="https://www.youtube.com/embed/s2pwZsQBfAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="card text-bg-success mb-3" style="width: 30vh;">
+                        <div class="card-header" style="text-align: center;">Jazz</div>
+                        <div class="card-body">
+                            
+                            <iframe width="165" src="https://www.youtube.com/embed/9stvXyonnd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="card text-bg-danger mb-3" style="width: 30vh;">
+                        <div class="card-header" style="text-align: center;">Rap</div>
+                        <div class="card-body">
+                            
+                            <iframe width="165" src="https://www.youtube.com/embed/XjA7tvuqXG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="card text-bg-light mb-3" style="width: 30vh;">
+                        <div class="card-header" style="text-align: center;">Clasica</div>
+                        <div class="card-body">
+                            <iframe width="165" src="https://www.youtube.com/embed/9E6b3swbnWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="card text-bg-dark mb-3" style="width: 30vh;">
+                        <div class="card-header" style="text-align: center;">R&B Soul</div>
+                        <div class="card-body">
+                            <iframe width="165" src="https://www.youtube.com/embed/fJkftOrBW1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+    </main>
+
+    <footer>
+        <div class="fixed-bottom bg-dark" style="color: white;" >
+            <p>
+                
+            </p>
+            <p style="text-align: end; padding-right: 10vh;">
+                <u>@Author: Jeisson Olivares</u>
+            </p>
+        </div>
+            
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
