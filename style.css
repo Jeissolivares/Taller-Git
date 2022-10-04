@@ -1,17 +1,6 @@
-.initialDiv{
-    display: flex;
-}
 
-#cards{
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-left: 2vh;
-}
+
+
 aside{
     float: right;
-}
-
-.contextoMusica p{
-    text-align: justify;
 }
