@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+
     <title>Music Nest</title>
 </head>
 
@@ -37,7 +44,7 @@
 
     <main style="margin-top: 10vh; margin-left: 5vh;">
         <div class="d-flex p-5">
-            <div class="d-flex flex-sm-column flex-wrap" >
+            <div class="d-flex flex-sm-column flex-wrap">
                 <div id="carousel" style="width: 100%;">
                     <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
                         <div class="carousel-inner">
@@ -92,40 +99,41 @@
                             <u>Top canciones más reproducidas en youtube</u>
                         </b>
                     </p>
-                    <table class="table table-dark table-sm">
+                    <table id="myTable" class="table table-dark table-sm">
                         <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Cancion</th>
-                            <th scope="col">Artista</th>
-                            <th scope="col">Nro. Reproducciones</th>
-                            <th scope="col">Url</th>
-                          </tr>
+                            <tr>
+                                <th>#</th>
+                                <th>Cancion</th>
+                                <th>Artista</th>
+                                <th>Nro. Reproducciones</th>
+                                <th>Url</th>
+                            </tr>
                         </thead>
                         <tbody class="table-group-divider">
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Baby Shark Dance</td>
-                            <td>Pinkfond</td>
-                            <td>11,401,579,719</td>
-                            <td><a href="https://www.youtube.com/watch?v=XqZsoesa55w" target="_blank">Ver</a></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Despacito</td>
-                            <td>Luis Fonsi</td>
-                            <td>7,976,409,147</td>
-                            <td><a href="https://www.youtube.com/watch?v=kJQP7kiw5Fk" target="_blank">Ver</a></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td >Johny Johny Yes Papa</td>
-                            <td>LooLoo Kids</td>
-                            <td>6,470,098,544</td>
-                            <td><a href="https://www.youtube.com/watch?v=F4tHL8reNCs&t=32s" target="_blank">Ver</a></td>
-                          </tr>
+                            <tr>
+                                <th>1</th>
+                                <td>Baby Shark Dance</td>
+                                <td>Pinkfond</td>
+                                <td>11,401,579,719</td>
+                                <td><a href="https://www.youtube.com/watch?v=XqZsoesa55w" target="_blank">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>Despacito</td>
+                                <td>Luis Fonsi</td>
+                                <td>7,976,409,147</td>
+                                <td><a href="https://www.youtube.com/watch?v=kJQP7kiw5Fk" target="_blank">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>Johny Johny Yes Papa</td>
+                                <td>LooLoo Kids</td>
+                                <td>6,470,098,544</td>
+                                <td><a href="https://www.youtube.com/watch?v=F4tHL8reNCs&t=32s" target="_blank">Ver</a>
+                                </td>
+                            </tr>
                         </tbody>
-                      </table>
+                    </table>
                 </div>
             </div>
 
@@ -134,39 +142,57 @@
                     <div class="card text-bg-primary mb-3">
                         <div class="card-header" style="text-align: center;">Rock</div>
                         <div class="card-body">
-                            <iframe width="165"  src="https://www.youtube.com/embed/-tJYN-eG1zk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="165" src="https://www.youtube.com/embed/-tJYN-eG1zk"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
-                    <div class="card text-bg-secondary mb-3" >
+                    <div class="card text-bg-secondary mb-3">
                         <div class="card-header" style="text-align: center;">Pop</div>
                         <div class="card-body">
-                            <iframe width="165" src="https://www.youtube.com/embed/s2pwZsQBfAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="165" src="https://www.youtube.com/embed/s2pwZsQBfAg"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
-                    <div class="card text-bg-success mb-3" >
+                    <div class="card text-bg-success mb-3">
                         <div class="card-header" style="text-align: center;">Jazz</div>
                         <div class="card-body">
-                            
-                            <iframe width="165" src="https://www.youtube.com/embed/9stvXyonnd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            <iframe width="165" src="https://www.youtube.com/embed/9stvXyonnd8"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
-                    <div class="card text-bg-danger mb-3" >
+                    <div class="card text-bg-danger mb-3">
                         <div class="card-header" style="text-align: center;">Rap</div>
                         <div class="card-body">
-                            
-                            <iframe width="165" src="https://www.youtube.com/embed/XjA7tvuqXG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            <iframe width="165" src="https://www.youtube.com/embed/XjA7tvuqXG4"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
-                    <div class="card text-bg-light mb-3" >
+                    <div class="card text-bg-light mb-3">
                         <div class="card-header" style="text-align: center;">Clasica</div>
                         <div class="card-body">
-                            <iframe width="165" src="https://www.youtube.com/embed/9E6b3swbnWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="165" src="https://www.youtube.com/embed/9E6b3swbnWg"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
-                    <div class="card text-bg-dark mb-3" >
+                    <div class="card text-bg-dark mb-3">
                         <div class="card-header" style="text-align: center;">R&B Soul</div>
                         <div class="card-body">
-                            <iframe width="165" src="https://www.youtube.com/embed/fJkftOrBW1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="165" src="https://www.youtube.com/embed/fJkftOrBW1g"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -175,16 +201,19 @@
     </main>
 
     <footer>
-        
+
         <script>
-            let hola = 'Hola';
+            $(document).ready(function () {
+                $('#myTable').DataTable();
+            });
         </script>
-        <div class="fixed-bottom bg-dark" style="color: white;" >
+        <div class="fixed-bottom bg-dark" style="color: white;">
             <p style="text-align: end; padding-right: 10vh;">
-                <u>Este sitio es meramente demostrativo, sin animos de ofender ni tomar como propios los videos expuestos.</u>
+                <u>Este sitio es meramente demostrativo, sin animos de ofender ni tomar como propios los videos
+                    expuestos.</u>
             </p>
         </div>
-            
+
     </footer>
     <script src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
